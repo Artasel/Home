@@ -16,11 +16,11 @@ namespace Rab2
                 int result = 0;
                 int y = 0;
                 string conv = Convert.ToString(x);
-                int b = Convert.ToInt32(conv);
+                x = Convert.ToInt32(conv);
                 for(; y < conv.Length; y++)
                 {
-                    int ost = b % 10;
-                    b = b / 10;
+                    int ost = x % 10;
+                    x = x / 10;
                     result += ost;
                 }
                 Console.WriteLine(result);
